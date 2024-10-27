@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+
+</head>
+
+<body>
+    <aside class="d-flex position-fixed top-0 bottom-0">
+        <div class="left vh-100 d-flex flex-column justify-content-between py-4">
+            <nav class="row g-3">
+                <a id="searchLink" class="text-white text-decoration-none" href="#">Search</a>
+                <a id="categoryLink" class="text-white text-decoration-none" href="#">Categories</a>
+                <a id="areaLink" class="text-white text-decoration-none" href="#">Areas</a>
+                <a id="ingredientsLink" class="text-white text-decoration-none" href="#">Ingredients</a>
+                <a id="contactLink" class="text-white text-decoration-none" href="#">Contact Us</a>
+            </nav>
+            <div class="copyrights">
+                <ul class="list-unstyled d-flex gap-1">
+                    <li>
+                        <a class="text-white text-decoration-none" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none" href="#"><i class="fa-solid fa-globe"></i></a>
+                    </li>
+                </ul>
+                <p class="text-white">Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        <div class="right min-vh-100 d-flex flex-column justify-content-between px-2 pt-5 text-center">
+            <img src="./images/logo.png" alt="Yummy" />
+            <i id="barIcon" class="fa-solid fa-bars text-black border-0 fa-2xl"></i>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#"><i class="fa-solid fa-globe text-black"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-share-nodes text-black"></i></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main style="margin-left: 65px;">
+        <section>
+            <div class="container inputSearch">
+            </div>
+            
+            <div class="container py-5">
+                <div id="mainContainer" class="row g-4">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
