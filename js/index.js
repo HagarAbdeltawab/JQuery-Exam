@@ -290,7 +290,8 @@ async function getAreas() {
 async function getIngredients() {
     let content = '';
     const data = await getData('https://www.themealdb.com/api/json/v1/1/list.php?i=list');
-    for (let item of data.meals) {
+    const displayData = data.meals.slice(0, 20);
+    for (let item of displayData) {
         content += `
             <div class="col-md-3">
                 <div onclick="getMeals('https://www.themealdb.com/api/json/v1/1/filter.php?i=${item.strIngredient}');" class="ingredient text-white text-center overflow-hidden position-relative">
